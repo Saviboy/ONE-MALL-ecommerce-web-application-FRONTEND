@@ -1,0 +1,19 @@
+1) Sign in and log in database connection -Accounts database
+
+2)checkout Order Confirm Form With javascript -orders table,
+  view order history and Product table.with product codes.
+
+3)Loged in view - Just remove the sign in and log in                                                     
+
+accountstable- Username,Password,phonenumber,email,gender,firstname,lastname.
+Orderstable- Ordered date,adress , phonenumber ,Item code.
+product table - Item, Item code, Shopname.
+
+ADD TO CART BUTTON CLICK EVENT
+
+1)The item code will be send to the checkout form with the product code
+ 
+Small ER Diagram
+Introduction Speech
+
+ 
