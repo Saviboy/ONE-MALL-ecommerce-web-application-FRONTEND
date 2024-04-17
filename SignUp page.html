@@ -1,0 +1,336 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="SignUppageCSS.css">
+<script language=javascript type="text/javascript">
+function SubmitForm()
+{
+	if(document.form.fnme.value.length <1 || document.form.lnme.value.length <1 || document.form.gender.value.length <1 || document.form.mail.value.length <1 || document.form.tel.value.length <1 || document.form.pass.value.length <1 || document.form.cpass.value.length <1)
+	{
+	        alert("Input is empty");
+		return;
+	}
+        if(!this.form.q1.checked)
+	{
+		alert("You must agree to the terms and conditions first");
+		return;
+	}
+
+        if(document.form.tel.value.length <10)
+        {
+                alert("All the characters should be numbers and length should be 10");
+                return;
+        }
+        
+        var pwd=document.getElementById("pass").value;
+	var conpwd=document.getElementById("cpass").value;
+	if (pwd != conpwd)
+        {
+		alert("Passwords do not match!");
+		return;
+	}
+
+        if (/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/.test(form.mail.value))
+  	{
+    	return (true);
+  	}
+    	alert("You have entered an invalid email address!");
+    	return (false);
+
+}
+</script>
+<title>Sign Up</title>
+	<style>
+		p,span
+                {
+			color: black;
+		}
+	
+                legend
+                {
+                        color: black;
+                        padding: 5px 10px;
+                        
+                }           
+                
+</style>
+
+</head>
+
+
+	<body style="font-family: arial;">
+<header>
+		<div class="info">
+			<ul class="infomation">
+				<li class="inf">BUY MORE, SAVE MORE /// UP TO 30% OFF</li>
+				<li class="inf">FREE SHIPPING AND RETURN POLICY</li>
+				<li class="inf">ISLAND-WIDE DELIVERY</li>
+			</ul>
+		</div>
+		
+		<div class="logo">
+			<img src="ReminiMall.jpeg" alt="" class="logo_img" style="padding-left: 60px;">
+		</div>
+		
+	<center>
+		<div class="navbar">
+		  <a href="HomePage.html" style="padding-left: 30%; color: black;">Home</a>
+			<div class="dropdown">
+			
+				<button class="dropbtn">Shops
+				</button>
+				
+				<div class="dropdown-content">
+					<a href="Embarkshoppage.html" id="drop">Embark Audio</a>
+				  	<a href="MAshoppage.html" id="drop">Mon Amant</a>
+				  	<a href="OMSshoppage.html" id="drop">One Million Stitches</a>
+					<a href="ANIshoppage.html" id="drop">ANI Art Gallery</a>
+				</div>
+			</div>
+		
+			<div class="dropdown">
+				<button class="dropbtn">Customer Care
+				</button>
+			
+				<div class="dropdown-content">
+			  		<a href="#" id="drop">Help</a>
+			  		<a href="faq page.html" id="drop">FAQ</a>
+			  		<a href="#" id="drop">Contact Support</a>
+				</div>
+			</div>
+			
+			<div class="dropdown">
+				<button class="dropbtn" style="border-right: none;">About
+				</button>
+			
+				<div class="dropdown-content">
+			  		<a href="AboutUs.html" id="drop">About One Mall</a>
+			  		<a href="#" id="drop">Privacy Policy</a>
+			  		<a href="ContactPage.html" id="drop">Contact Us</a>
+				</div>
+			</div>
+
+
+		  <div style="float: left; padding-left: 150px;">
+			  <a href="#" style="border-right: none; padding-top: 5px;">
+			  <input type="search" placeholder="Search" style="height: 5vh; width: 200px; padding-bottom: 0px;"></a>
+			  <a href="SignIn page.html">Log In</a>
+		  	  <a href="SignUp page.html" style="border-right: none;">Sign Up</a>
+		  </div>
+		</div>
+	</center>
+	</header>
+
+	<center>
+	<div style="width: 400px; background-color: white; height:700px; position: sticky; padding-top: 100px;">
+		
+		
+		<form method="post" name="form">
+                <fieldset>
+                <legend style="font-size:48px">Signup</legend>
+		<table>
+			<tr>
+				<td>
+					<p>First Name</p>
+				</td>
+				<td>
+					<input type="text" name="fnme" placeholder="First Name">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Last Name</p>
+				</td>
+				<td>
+					<input type="text" name="lnme" placeholder="Last Name">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Date Of Birth</p>
+				</td>
+				<td>
+					<select name="date">
+						<option>Date</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+						<option>13</option>
+						<option>14</option>
+						<option>15</option>
+						<option>16</option>
+						<option>17</option>
+						<option>18</option>
+						<option>19</option>
+						<option>20</option>
+						<option>21</option>
+						<option>22</option>
+						<option>23</option>
+						<option>24</option>
+						<option>25</option>
+						<option>26</option>
+						<option>27</option>
+						<option>28</option>
+						<option>29</option>
+						<option>30</option>
+						<option>31</option>
+					</select>
+					<select name="Month">
+						<option>Month</option>
+						<option>January</option>
+						<option>February</option>
+						<option>March</option>
+						<option>April</option>
+						<option>May</option>
+						<option>June</option>
+						<option>July</option>
+						<option>August</option>
+						<option>September</option>
+						<option>October</option>
+						<option>November</option>
+						<option>December</option>
+					</select>
+					<select name="year">
+						<option>Year</option>
+						<option>2005</option>
+						<option>2004</option>
+						<option>2003</option>
+						<option>2002</option>
+						<option>2001</option>
+						<option>2000</option>
+						<option>1999</option>
+						<option>1998</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Gender</p>
+				</td>
+				<td>
+					<input type="radio" name="gender" value="0"><span>Male</span>
+					<input type="radio" name="gender" value="1"><span>Female</span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Country</p>
+				</td>
+				<td>
+					<select name="country">
+						<option>Country</option>
+						<option>Sri Lanka</option>
+						<option>India</option>
+						<option>China</option>
+						<option>Australia</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>E-mail</p>
+				</td>
+				<td>
+					<input type="email" name="mail" placeholder="Email">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Phone</p>
+				</td>
+				<td>
+					<input type="number" name="tel" placeholder="Phone">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Password</p>
+				</td>
+				<td>
+					<input type="password" name="pass" id="pass">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Confirm Password</p>
+				</td>
+				<td>
+					<input type="password" name="cpass" id="cpass">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					
+				</td>
+				<td>
+					<input type="checkbox" name="q1" value="0"><span>I agree to the terms and conditions</span>
+				</td>
+			</tr>
+		</table>
+
+         
+			<div style="margin: 10px; padding: 1px;">
+                        <div align="right">
+				<input type="button" name="submit" onclick="SubmitForm()" style="background-color: greenyellow" value="Submit">
+				<input type="reset" name="cancel" style="background-color: red" value="Cancel">
+			</div>
+</div>
+              </fieldset>
+		</form>
+		
+	</div> 
+</center>
+	<!--FOOTER-->
+	<div style="border-bottom: 2px solid black; height: 12vh;"></div>
+
+	<div style="padding-top: 30px; padding-bottom: 80px; background-color: black;">
+		<div style="padding-top: 0px; padding-left: 200px; height: 0px; width: 300px;"> 
+			<table border="0" class="tbl">
+				<tr><td style="color: white; font-size: 20px;">Shops</td></tr>
+				<tr><td><a href="MAshoppage.html">Mon Amant</a></td></tr>
+				<tr><td><a href="Embarkshoppage.html">Embark Audio</a></td></tr>
+				<tr><td><a href="OMSshoppage.html">One Million Stitches</a></td></tr>
+				<tr><td><a href="ANIshoppage.html">ANI Art Gallery</a></td></tr>
+			</table>
+		</div>
+		
+		<div style="padding-top: 0px; padding-left: 450px; height: 0px; width: 300px;">
+			<table border="0" class="tbl">
+				<tr><td style="color: white; font-size: 20px;">Customer Care</td></tr>
+				<tr><td><a href="faq page.html">Help Center</a></td></tr>
+				<tr><td><a href="">How to Buy</a></td></tr>
+				<tr><td><a href="ContactPage.html">Contact Us</a></td></tr>
+			</table>
+		</div>
+		<div style="padding-top: 0px; padding-left: 700px; height: 0px;">
+			<table border="0" class="tbl">
+				<tr><td style="color: white; font-size: 20px;">Learn</td></tr>
+				<tr><td><a href="">Events</a></td></tr>
+				<tr><td><a href="">Sell at One Mall</a></td></tr>
+				<tr><td><a href="">Privacy Policy</a></td></tr>
+			</table>
+		</div>
+		<div style="padding-top: 0px; padding-left: 950px; height: 0px; width: 300px;">
+			<table border="0" class="tbl">
+				<tr><td style="color: white; font-size: 20px;">About</td></tr>
+				<tr><td><a href="AboutUs.html">About One Mall</a></td></tr>
+				<tr><td><a href="">Shops at One Mall</a></td></tr>
+				<tr><td><a href="">Privacy Policy</a></td></tr>			
+				<tr><td><a href="ContactPage.html">Contact Us</a></td></tr>
+			</table>
+		</div>
+		<div style="padding-top: 30px;"><font class="one">ONE</font></div>
+		<div><font class="mall">MALL</font></div>
+	</div>
+	<!--FOOTER ENDING-->	
+</body>
+</html>
